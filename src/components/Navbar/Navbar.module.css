@@ -7,4 +7,8 @@ body {
 
 a, a:hover {
   color: #fff !important;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.bgNavbar {
+  background-color: rgba(30, 41, 82, 0.2);
+}/*# sourceMappingURL=Navbar.module.css.map */
