@@ -1,4 +1,4 @@
-import { createBrowserRouter,  Navigate,  RouterProvider } from "react-router-dom";
+import {   createHashRouter,  Navigate,  RouterProvider } from "react-router-dom";
 import Notfound from './../NotFound/NotFound';
 import Home from './../Home/Home';
 import People from './../People/People';
@@ -40,7 +40,7 @@ useEffect(() => {
 
 
 
-  let routes = createBrowserRouter([
+  let routes = createHashRouter([
     {
       path: "/",
       element: <MasterLayout userData={userData} Logout={Logout}/>,
