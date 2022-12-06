@@ -24,7 +24,7 @@ export default function Login({saveUserData}) {
       setErrorsList(validationResponse.error.details);
     } else {
       let { data } = await axios.post(
-        "https://route-egypt-api.herokuapp.com/signin",
+        "https://sticky-note-fe.vercel.app/signin",
         user
       );
       if (data.message === "success") {

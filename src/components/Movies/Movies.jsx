@@ -24,18 +24,20 @@ export default function Movies() {
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
       <div className="row my-3 py-5">
-        <div className="col-md-4">
-          <div>
+        <div className="col-md-4 col-sm-6 d-flex justify-content-center align-items-center" >
+            <div className="container">
             <div className={`${styles.brdr} w-25 mb-4`}></div>
             <h3>Trending</h3>
             <h3>Movies</h3>
             <h3>To watch now</h3>
             <span className="text-muted">most watched movies by day</span>
             <div className={`${styles.brdr} mt-4 w-100`}></div>
-          </div>
+            </div>
+          
         </div>
         {trendingMovies.map((item, index) => (
-          <div key={index} className="col-md-2">
+          <div key={index} className="col-md-2 col-sm-6">
+            <div className="container">
             <Link className="nav-link" to={`/details/${item.id}/${item.media_type}`}>
             <div className="item">
               <img
@@ -49,6 +51,7 @@ export default function Movies() {
               </h6>
             </div>
             </Link>
+            </div>
           </div>
         ))}
       </div>

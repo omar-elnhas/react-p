@@ -24,8 +24,8 @@ export default function People() {
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
       <div className="row my-3 py-5">
-        <div className="col-md-4">
-          <div>
+        <div className="col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
+          <div className="container">
             <div className={`${styles.brdr} w-25 mb-4`}></div>
             <h3>Trending</h3>
             <h3>People</h3>
@@ -35,7 +35,7 @@ export default function People() {
           </div>
         </div>
         {trendingPeople.map((item, index) => (
-          <div key={index} className="col-md-2">
+          <div key={index} className="col-md-2 col-sm-6">
              <Link className="nav-link" to={`/details/${item.id}/${item.media_type}`}>
             <div className="item">
                 {item.profile_path?<img
